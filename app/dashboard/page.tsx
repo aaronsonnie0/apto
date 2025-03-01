@@ -7,6 +7,7 @@ import { Header } from "@/components/header"
 import { Dashboard } from "@/components/dashboard"
 import { Footer } from "@/components/footer"
 import { Loader2 } from "lucide-react"
+import { AILearning } from "@/components/ai-learning"
 
 export default function DashboardPage() {
   const { user, isLoading } = useAuth()
@@ -36,6 +37,7 @@ export default function DashboardPage() {
       <Header />
       <div className="pt-16">
         <Dashboard />
+        <AILearning />
       </div>
       <Footer />
     </main>
